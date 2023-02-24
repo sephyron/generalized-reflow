@@ -1,0 +1,247 @@
+//tile components
+//===========================================
+
+single-tile {
+  display: grid;
+  //for container queries
+  contain: layout inline-size;
+}
+
+/*
+@container (max-width: 200px){
+  single-tile {
+    .sparkline {
+        visibility: none;
+    }
+  }
+}
+*/
+
+.single-panel {
+  background-color: transparent;
+  //color: $fontcolor-default;
+  padding: 0 1rem;
+  font-size: 0.85rem;
+  max-height: 500px;
+  .link {
+    color: $primarycolor-action;
+    font-size: 0.8rem;
+    float: right;
+    text-decoration: none;
+  }
+  svg {
+    max-height: 200px;
+    max-width: 100vh;
+  }
+    &.short {
+      min-height: 100px;
+      max-height: 135px;
+    }
+    &.tall {
+      min-height: 250px;
+      max-height: 500px;
+    }
+    &.no-spark {
+      .sparkline {
+        visibility: none;
+        display: none;
+    }
+  }
+}
+//card styles
+//rounded med-dk grey
+.style-1 {
+  background-color: $background-section;
+  color: $fontcolor-default;
+  border-radius: 0.25rem;
+}
+//square blk
+.style-2 {
+  background-color: $background-navigation;
+  color: $fontcolor-default;
+  border-radius: 0;
+}
+
+.dt-title, .sp-title {
+  font-family: $primaryFont, sans-serif;
+  font-size: 0.85rem;
+  line-height: 0.85rem;
+  color: $fontcolor-active;
+  opacity: 0.98;
+}
+
+.dt-subtitle, .sp-subtitle {
+  font-family: $primaryFont, sans-serif;
+  font-size: 0.75rem;
+  color: $fontcolor-default;
+  padding: 0.3rem 0;
+  opacity: 0.65;
+  max-width: 100px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.sp-metric {
+  //height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+div {
+display: flex;
+  span {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: $fontcolor-active;
+  }
+  sub {
+      font-size: 1rem;
+      font-weight: normal;
+      vertical-align: bottom;
+      align-self: flex-end;
+      margin: 0 0 4px 8px;
+      line-height: 1rem;
+      display: flex;
+
+      &[data-value="arrow_upward"] {
+        color: $color-severity-red;
+      }
+      &[data-value="arrow_downward"] {
+        color: $color-severity-green;
+      }
+      &[data-value="remove"] {
+        color: $fontcolor-muted;
+      }
+      i {
+        font-size: 1rem;
+        vertical-align:  baseline;
+        width: 0.8rem;
+
+        }
+      &.arrow, &.delta {
+        font-size: 1rem;
+        vertical-align:  baseline;
+       
+      }
+  }
+}
+}
+
+
+
+
+
+
+  
+    div.sp-bars  {
+      min-width: 100% ;
+      margin-top: 1rem;
+      div {
+        display: flex;
+        justify-content: space-between;
+        
+        line-height: 1.5rem;
+        margin-bottom: 0.25rem;
+
+        &.one div.bar-h {
+          width: 77%;
+        
+        }
+        &.two div.bar-h {
+          
+          width: 45%;
+        }
+        &.three div.bar-h {
+
+          width: 39%;
+          
+        }
+        &.four div.bar-h {
+
+          width: 33%;
+          
+        }
+        &.five div.bar-h {
+
+          width: 25%;
+          
+        }
+        &.six div.bar-h {
+
+          width: 10%;
+          
+        }
+        &.seven div.bar-h {
+
+          width: 8%;
+          
+        }
+        &.eight div.bar-h {
+
+          width: 5%;
+          
+        }
+        &.nine div.bar-h {
+
+          width: 3%;
+          
+        }
+        &.ten div.bar-h {
+
+          width: 1%;
+          
+        }
+      sub {
+        float: right;
+        align-self: center;
+        min-width: 40px;
+        font-size: 0.8rem;
+        font-weight: lighter;
+        
+        &[data-value="arrow_upward"] {
+          color: $color-severity-red;
+        }
+        &[data-value="arrow_downward"] {
+          color: $color-severity-green;
+        }
+        &[data-value="remove"] {
+          color: $fontcolor-muted;
+        }
+        i {
+          font-size: 0.75rem;
+          vertical-align: middle;
+          margin-bottom:2px;
+          }
+      }
+    }
+    
+  }
+
+.dt-metric {
+  span {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: $fontcolor-active;
+    
+    sub {
+      font-size: 1rem;
+      font-weight: lighter;
+      vertical-align: baseline;
+      margin-left: 4px;   
+      &[data-value="arrow_upward"] {
+        color: $color-severity-red;
+      }
+      &[data-value="arrow_downward"] {
+        color: $color-severity-green;
+      }
+      &[data-value="remove"] {
+        color: $fontcolor-muted;
+      }
+      i {
+        font-size: 1rem;
+        }
+      
+      
+    }
+  }
+}

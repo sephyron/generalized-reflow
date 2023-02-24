@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Responsive guide</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body id="app">
+    <div class="wrapper">
+      <nav class="nav-bar nav">
+        <div id="nav-toggle" class="nav-home nav-toggle">
+          <i class="material-icons">menu</i>
+          Title
+        </div>
+
+        <div class="nav-actions">
+          <i class="material-icons">search</i>
+          <i class="material-icons">schedule</i>
+          <i class="material-icons">notifications_none</i>
+        </div>
+      </nav>
+
+      <header class="context-header">
+        <div class="context-bar hide">
+          <div class="fltr">
+            <i class="material-icons icon-border">schedule</i>
+            Value
+            <i class="material-icons">arrow_drop_down</i>
+            <div class="dropdown">
+              <div class="dropdown-content">
+                <div href="#">Value</div>
+                <div href="#">Value</div>
+                <div href="#">Value</div>
+                <div href="#">Value</div>
+              </div>
+            </div>
+          </div>
+          <a class="fltr">
+            <span class="key">Option: </span> Value
+            <i class="material-icons">arrow_drop_down</i>
+            <div class="dropdown">
+              <div class="dropdown-content">
+                <div href="#">Value 1</div>
+                <div href="#">Value 2</div>
+                <div href="#">Value 3</div>
+                <div href="#">Value 4</div>
+              </div>
+            </div>
+          </a>
+          <!--a class="fltr">
+            <span class="key">Group by:</span> accountId
+            <i class="material-icons">arrow_drop_down</i>
+          </a>
+          <a class="fltr">
+            <span class="key">key:</span> value
+            <i class="material-icons">arrow_drop_down</i>
+          </a-->
+
+          <!--a class="add material-icons">
+            add
+          </a-->
+          <div class="fltr-add">Filter by...</div>
+          <div class="more">
+            <i class="material-icons">more_vert</i>
+            <div class="dropdown">
+              <div class="dropdown-content">
+                <div href="#">one</div>
+                <div href="#">two</div>
+                <div href="#">three</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="breadcrumb" class="breadcrumb">
+          <div class="crumb"><i class="material-icons">home</i></div>
+          <div class="separator">/</div>
+          <div class="crumb">Overview</div>
+          <div class="separator">/</div>
+        </div>
+      </header>
+      <dataspace>
+        <aside id="aside" class="c">
+          <large-tile
+            class="single-panel style-2 c0 tall"
+            name="Top Ten Page Load Times"
+            subtitle="Past 30 Min"
+            description="This is some description text."
+            metric="15"
+            arrow="arrow_downward"
+            delta="10"
+          >
+          </large-tile>
+          <single-tile
+            class="single-panel style-2 c1 short"
+            name="Some Metric"
+            subtitle="Past 30 Min"
+            description="This is some description text."
+            metric="15"
+            arrow="arrow_downward"
+            delta="10"
+          >
+          </single-tile>
+          <single-tile
+            class="single-panel style-2 c2 short"
+            name="Some Metric"
+            subtitle="Past 30 Min"
+            description="This is some description text."
+            metric="15"
+            arrow="arrow_upward"
+            delta="10"
+          >
+          </single-tile>
+          <single-tile
+            class="single-panel style-2 c3 short"
+            name="Some Metric"
+            subtitle="Past 30 Min"
+            description="This is some description text."
+            metric="15"
+            arrow="arrow_upward"
+            delta="10"
+          >
+          </single-tile>
+          <single-tile
+            class="single-panel style-2 c4 short no-spark"
+            name="Some Metric"
+            subtitle="Past 30 Min"
+            description="This is some description text."
+            metric="15"
+            arrow="arrow_upward"
+            delta="10"
+            sparkline="{35,15,30,50,20,35,55,65,95,50,10,35,20,50,75,80,70,45,90,95}"
+          >
+          </single-tile>
+          <single-tile
+            class="single-panel style-2 c5 short"
+            name="Some Metric"
+            subtitle="Past 30 Min"
+            description="This is some description text."
+            metric="15"
+            arrow="arrow_upward"
+            delta="10"
+            sparkline="{35,15,30,50,20,35,55,65,95,50,10,35,20,50,75,80,70,45,90,95}"
+          >
+          </single-tile>
+        </aside>
+        <divider></divider>
+        <main id="main" class="d">
+          <div class="row-header header-1">
+            <h3>Key Metrics - Browser</h3>
+            <div class="actions">
+              <i class="material-icons">reorder</i>
+            </div>
+          </div>
+          <signal-tile
+            class="single-panel style-2 e"
+            name="Some Metric"
+            subtitle="Past 30 Min"
+            description="This is some description text."
+          >
+          </signal-tile>
+
+          <signal-tile
+            class="single-panel style-2 f"
+            name="Some Metric"
+            subtitle="Past 30 Min"
+            description="This is some description text."
+          >
+          </signal-tile>
+          <signal-tile
+            class="single-panel style-2 g"
+            name="Some Metric"
+            subtitle="Past 30 Min"
+            description="This is some description text."
+          >
+          </signal-tile>
+          <div class="row-header header-2">
+            <h3>Web Vitals - Browser</h3>
+            <div class="actions">
+              <i class="material-icons">reorder</i>
+            </div>
+          </div>
+
+          <signal-tile
+            class="single-panel style-2 h"
+            name="Some Metric"
+            subtitle="Past 30 Min"
+            description="This is some description text."
+          >
+          </signal-tile>
+          <signal-tile
+            class="single-panel style-2 i"
+            name="Some Metric"
+            subtitle="Past 30 Min"
+            description="This is some description text."
+          >
+          </signal-tile>
+          <signal-tile
+            class="single-panel style-2 ii"
+            name="Some Metric"
+            subtitle="Past 30 Min"
+            description="This is some description text."
+          >
+          </signal-tile>
+          <signal-tile
+            class="single-panel style-2 iii"
+            name="Some Metric"
+            subtitle="Past 30 Min"
+            description="This is some description text."
+          >
+          </signal-tile>
+          <div class="row-header header-3">
+            <h3>External Resources - Browser</h3>
+            <div class="actions">
+              <i class="material-icons">reorder</i>
+            </div>
+          </div>
+
+          <signal-tile
+            class="single-panel style-2 j"
+            name="Some Metric"
+            subtitle="Past 30 Min"
+            description="This is some description text."
+          >
+          </signal-tile>
+          <signal-tile
+            class="single-panel style-2 k"
+            name="Some Metric"
+            subtitle="Past 30 Min"
+            description="This is some description text."
+          >
+          </signal-tile>
+          <signal-tile
+            class="single-panel style-2 l"
+            name="Some Metric"
+            subtitle="Past 30 Min"
+            description="This is some description text."
+          >
+          </signal-tile>
+          <signal-tile
+            class="single-panel style-2 ll"
+            name="Some Metric"
+            subtitle="Past 30 Min"
+            description="This is some description text."
+          >
+          </signal-tile>
+          <signal-tile
+            class="single-panel style-2 lll"
+            name="Some Metric"
+            subtitle="Past 30 Min"
+            description="This is some description text."
+          >
+          </signal-tile>
+        </main>
+      </dataspace>
+
+      <footer class="workspace-nav">
+        <div class="workspace-preview hidden">
+          <div class="workspace-preview-toolbar">
+            <span>-31s</span>
+            <span>tag</span>
+            <span>tag</span>
+            <span>tag</span>
+          </div>
+          <div class="workspace-preview-content">
+            <h1 class="preview-title">Preview Area</h1>
+          </div>
+        </div>
+
+        <div class="workspace-btn">
+          <i class="material-icons">subject</i>
+          <span>Related Content of some kind or other</span>
+        </div>
+        <div class="workspace-btn">
+          <i class="material-icons">subject</i> <span>title</span>
+        </div>
+        <div class="workspace-btn">
+          <i class="material-icons">subject</i> <span>title</span>
+        </div>
+        <div class="workspace-btn">
+          <i class="material-icons">subject</i> <span>title</span>
+        </div>
+        <div class="workspace-btn">
+          <i class="material-icons">subject</i> <span>title</span>
+        </div>
+        <div class="workspace-btn">
+          <i class="material-icons">subject</i> <span>title</span>
+        </div>
+      </footer>
+    </div>
+
+    <side-nav class="side-nav">
+      <div class="header">
+        <i class="material-icons">home</i><span>Observability</span
+        ><i class="material-icons end close">close</i>
+      </div>
+      <div class="menu-item">
+        <i class="material-icons">home</i><span>Home</span>
+      </div>
+      <div class="menu-item">
+        <i class="material-icons">home</i><span>Services</span
+        ><i class="material-icons">chevron_right</i>
+      </div>
+      <div class="menu-item">
+        <i class="material-icons">home</i><span>Infrastructure</span>
+      </div>
+      <div class="menu-item">
+        <i class="material-icons">home</i><span>Log Explorer</span>
+      </div>
+
+      <div class="menu-item">
+        <i class="material-icons">home</i><span>Alerts</span>
+      </div>
+
+      <div class="menu-item">
+        <i class="material-icons">home</i><span>Integrations</span
+        ><i class="material-icons end">chevron_right</i>
+      </div>
+
+      <div class="menu-item">
+        <i class="material-icons">home</i><span>Timeline</span>
+      </div>
+
+      <div class="menu-item">
+        <i class="material-icons">home</i><span>Dashboards</span>
+      </div>
+
+      <div class="menu-item">
+        <i class="material-icons">home</i><span>Settings</span
+        ><i class="material-icons">chevron_right</i>
+      </div>
+
+      <div class="menu-item">
+        <i class="material-icons">home</i><span>Help</span>
+      </div>
+
+      <div class="menu-item">
+        <i class="material-icons">home</i><span>User Name</span
+        ><i class="material-icons">chevron_right</i>
+      </div>
+    </side-nav>
+    <div class="info-banner">
+      <span id="breakpoint"> </span>
+      <span id="dimensions"> </span>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

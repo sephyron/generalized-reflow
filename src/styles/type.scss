@@ -1,0 +1,68 @@
+
+@font-face {
+  font-family: ProtoFontRegular;
+  src: url(https://www.splunk.com/etc/clientlibs/splunk/splunk-core/source/fonts/splunkdatasans/woff2/splunkdatasans_w_rg.woff2);
+}
+
+@font-face {
+  font-family: ProtoFontMedium;
+  src: url(https://www.splunk.com/etc/clientlibs/splunk/splunk-core/source/fonts/splunkdatasans/woff2/splunkdatasans_w_md.woff2);
+}
+
+@font-face {
+  font-family: ProtoFontBold;
+  src: url(https://www.splunk.com/etc/clientlibs/splunk/splunk-core/source/fonts/splunkdatasans/woff2/splunkdatasans_w_bd.woff2);
+}
+@font-face {
+  font-family: "spark-bar-narrow";
+  src: url("https://tools.aftertheflood.com/sparks/output/woff/Sparks-Bar-Narrow.woff?raw=true")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "spark-dot-medium";
+  src: url("https://tools.aftertheflood.com/sparks/output/woff/Sparks-Dot-Medium.woff?raw=true")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "spark-dotline-thin";
+  src: url("https://tools.aftertheflood.com/sparks/output/woff/Sparks-Dotline-Thin.woff?raw=true")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+//Proportional scaling media queries for typography
+//===========================================
+/* This example begins from 320px | 20em  to  30px @ 1920px */
+@media (min-width: 20rem) {
+  :root {
+     font-size: calc(1rem + ((1vw - .2em) / 1.37142857)); 
+  }
+}
+
+ //1rem(16px) @ 48em(768px) increasing to 2rem(32px) @ 120em(1920px) 
+@media (min-width: 48rem) {
+  :root
+  
+   {
+    //font-size: calc(1rem + ((1vw - 0.48rem) * 1.3889));
+    /* Where: * 1.3889 = 100 * font_Size_Difference / viewport_Width_Difference */
+    font-size: clamp(var(--fluid-type-min, 1rem),calc(1rem + var(--fluid-type-target, 3vw)),var(--fluid-type-max, 1.0rem));
+  }
+}
+
+/* Prevent font scaling beyond this breakpoint */
+@media (min-width: 120rem) {
+  :root {
+    //font-size: 2em;
+    font-size: clamp(var(--fluid-type-min, 1rem),calc(1rem + var(--fluid-type-target, 3vw)),var(--fluid-type-max, 1.0rem));
+    /* Setting font-size to a fixed value */
+  }
+}

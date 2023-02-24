@@ -1,0 +1,29 @@
+//demo styles
+
+.info-banner {
+  display: flex;
+  width: 100vw;
+  position: fixed;
+  bottom: 0px;
+  z-index: 99999999;
+  justify-content: center;
+  margin: 0 auto;
+  border-top: 1px solid rgb(61, 60, 60);
+  background-color: rgb(50, 50, 51);
+  font-size: 0.75rem;
+  padding: 0.5rem;
+  color: #ddd;
+  span{ 
+    
+    &.pill {
+      padding: 0.2rem 0.5rem;
+      margin: 0 0.5rem 0 0.5rem;
+      border-radius: 4px;
+      background-color: rgba(61, 60, 60, 1);
+    }
+    i {
+      font-weight: bolder; 
+      color: #fff;
+    }
+}
+}

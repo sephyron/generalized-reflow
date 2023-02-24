@@ -1,0 +1,39 @@
+//sparkline
+.sparkline {
+  display: flex;
+  -webkit-font-variant-ligatures: contextual;
+  font-variant-ligatures: contextual;
+  -webkit-font-feature-settings: "calt";
+  font-feature-settings: "calt";
+  margin-top: auto;
+  width: 100%;
+  justify-content: flex-end;
+  &--bar-narrow {
+    font-family: "spark-bar-narrow";
+    font-size: 4rem;
+  }
+
+  &--dot-md {
+    font-family: "spark-dot-medium";
+    font-size: 2.75rem;
+  }
+
+  &--dotline-thin {
+    font-family: "spark-dotline-thin";
+    font-size: 1.8rem;
+    padding-bottom: 10px;
+  }
+}
+
+//horizontal bars
+.bar-h {
+  margin: 1px 0;
+  background-color: $chartcolor-muted;
+    span {
+      padding: 0 4px;
+    }
+    &:hover {
+      background-color: $fontcolor-disabled;
+      cursor: pointer;
+    }
+}

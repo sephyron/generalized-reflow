@@ -1,2 +1,2 @@
-# generalized-reflow
+# web-components-prototype
 Created with CodeSandbox

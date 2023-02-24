@@ -1,0 +1,115 @@
+//footer workspace aka related content bar
+
+footer {
+  
+  height: 72px;
+  background-color: #0b0c0e;
+  border-top: 1px solid #43454B;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  position: fixed;
+  grid-column: col / span 6;
+  grid-row: row 4;
+  display: none;
+  grid-gap: 0.5rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-area: footer;
+  width: 100%;
+  margin: 0;
+  bottom: 0;
+  overflow-x: scroll;
+
+  .workspace-btn {
+    display: flex;
+    flex-direction: row;
+    border-radius: 4px;
+    height: 48px;
+    max-height: 48px;
+    align-items: center;
+    padding: 0 1rem;
+    line-height: normal;
+    
+
+    span {
+    min-width: 250px;
+    max-width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 2;
+    overflow-wrap: break-word;
+    }
+
+    font-size: 0.85rem;
+    background-color: $background-section;
+    color: #fff;
+    cursor: pointer;
+
+    &:nth-child(2) {
+      margin-left: 0.5rem;
+    }
+    &:last-child {
+      margin-right: 0.5rem;
+    }
+    &:hover {
+      background-color: #27292e;
+    }
+    i {
+      color: #aaa9b1;
+      font-size: 0.95rem;
+      line-height: 48px;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+  }
+}
+
+.workspace-preview {
+  position: absolute;
+  bottom: 72px;
+  display: block;
+  opacity: 1;
+  background-color: $background-section;
+  height: 60vh;
+  width: 55vw;
+  border: 1px solid $bordercolor-divider;
+  margin-left: 0.5rem;
+  transition: opacity 0.1s ease;
+  .workspace-preview-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-size: 72px;
+      font-family: ProtoFontBold;
+      color: #3d3f45;
+      align-self: center;
+      //transform: translate(25%, 25%);
+    }
+  }
+
+  .workspace-preview-toolbar {
+    background-color: $background-section;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: space-between;
+    height: 40px;
+    padding-left: 0.25rem;
+    span {
+      border-radius: 4px;
+      color: #fff;
+      font-size: 0.8rem;
+      margin: 0.25rem;
+      font-weight: bold;
+      background-color: $background-grey;
+      line-height: 28px;
+      padding: 0 1rem;
+      &:hover {
+        background-color: #3d3f45;
+      }
+    }
+  }
+}

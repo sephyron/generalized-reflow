@@ -1,0 +1,37 @@
+{
+  "name": "vanilla",
+  "version": "1.0.0",
+  "description": "responsive 011y demo",
+  "main": "src/index.js",
+  "dependencies": {
+    "babel": "6.23.0",
+    "d3": "6.7.0",
+    "material-icons": "0.3.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "sass-loader": "8.0.2",
+    "scss": "0.2.4"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.0",
+    "parcel-bundler": "^1.6.1"
+  },
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html",
+    "start-react": "react-scripts start",
+    "build-react": "react-scripts build",
+    "test-react": "react-scripts test --env=jsdom",
+    "eject-react": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "keywords": [
+    "javascript",
+    "starter"
+  ]
+}
